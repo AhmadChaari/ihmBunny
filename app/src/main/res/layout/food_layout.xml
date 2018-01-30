@@ -17,6 +17,6 @@
         android:paddingTop="7dp"
         android:text="Maxican"
         android:textColor="@color/subtext"
-        android:textSize="15dp" />
+        android:textSize="13dp" />
 
 </LinearLayout>

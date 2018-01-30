@@ -14,7 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +31,7 @@
                     android:paddingLeft="20dp"
                     android:text="Cuisines:"
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="normal" />
 
                 <android.support.v7.widget.RecyclerView
@@ -49,7 +50,7 @@
                     android:paddingLeft="20dp"
                     android:text="Tag: "
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="normal" />
 
                 <LinearLayout
@@ -85,6 +86,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:text="Populer"
+                            android:textSize="13dp"
                             android:textColor="@color/subtext" />
 
                     </LinearLayout>
@@ -113,6 +115,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:text="New"
+                            android:textSize="13dp"
                             android:textColor="@color/subtext" />
 
                     </LinearLayout>
@@ -141,6 +144,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:text="Featured"
+                            android:textSize="13dp"
                             android:textColor="@color/subtext" />
 
                     </LinearLayout>
@@ -154,7 +158,7 @@
                     android:paddingLeft="20dp"
                     android:text="Test:"
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="normal" />
 
 
@@ -180,7 +184,7 @@
                     android:paddingLeft="20dp"
                     android:text="Food:"
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="normal" />
 
                 <LinearLayout
@@ -201,6 +205,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/roundtext1"
                         android:gravity="center"
+                        android:textSize="13dp"
                         android:padding="7dp"
                         android:text="Vegetarian"
                         android:textColor="@color/green" />
@@ -215,6 +220,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/roundtext1"
                         android:gravity="center"
+                        android:textSize="13dp"
                         android:padding="7dp"
                         android:text="Eggetarian"
                         android:textColor="@color/yello" />
@@ -229,6 +235,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/roundtext1"
                         android:gravity="center"
+                        android:textSize="13dp"
                         android:padding="7dp"
                         android:text="Non veg"
                         android:textColor="@color/red" />
@@ -243,7 +250,7 @@
                     android:paddingLeft="20dp"
                     android:text="Near by:"
                     android:textColor="#000"
-                    android:textSize="16dp"
+                    android:textSize="15dp"
                     android:textStyle="normal" />
 
                 <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
@@ -278,35 +285,37 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_alignParentBottom="true"
-                android:gravity="right"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="55dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/corner_different"
-                    android:orientation="vertical">
-
-                    <ImageButton
-
-                        android:id="@+id/imageButton"
-                        android:layout_width="23dp"
-                        android:layout_height="22dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="22dp"
-                        android:background="#51c779"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/correct" />
-                </LinearLayout>
-
-            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_different"
+            android:orientation="vertical"
+            android:id="@+id/linearbut">
+
+            <ImageButton
+
+                android:id="@+id/imageButton"
+                android:layout_width="23dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:background="#51c779"
+                android:scaleType="fitXY"
+                android:src="@drawable/correct" />
+        </FrameLayout>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

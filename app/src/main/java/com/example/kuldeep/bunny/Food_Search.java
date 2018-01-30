@@ -115,6 +115,7 @@ public class Food_Search extends AppCompatActivity implements View.OnClickListen
 
             }
         });
+
         popularLinearLayout.setOnClickListener(this);
         newLinearLayout.setOnClickListener(this);
         featuredLinearLayout.setOnClickListener(this);
