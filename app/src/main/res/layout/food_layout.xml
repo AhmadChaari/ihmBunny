@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+        android:id="@+id/foodlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/roundtext1"
+        android:paddingBottom="7dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="7dp"
+        android:text="Maxican"
+        android:textColor="@color/subtext"
+        android:textSize="15dp" />
+
+</LinearLayout>

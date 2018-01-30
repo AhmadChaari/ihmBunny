@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.kuldeep.bunny.Food_Search">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar2" />
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView3
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Cuisines:"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView3
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Tag: "
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/taglayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/populatlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="7dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/fire1" />
+
+                        <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Populer"
+                            android:textColor="@color/subtext" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/newlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="7dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/time" />
+
+                        <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="New"
+                            android:textColor="@color/subtext" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/featuredlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="7dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/star0" />
+
+                        <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Featured"
+                            android:textColor="@color/subtext" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView3
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Test:"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:max="2"
+                    android:progress="1"
+                    android:progressDrawable="@drawable/custom_progressbar"
+                    android:thumb="@drawable/thumb_transperent"
+
+                    />
+
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView3
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Food:"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/foodlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Vegetarian"
+                        android:textColor="@color/green" />
+
+
+                    <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Eggetarian"
+                        android:textColor="@color/yello" />
+
+
+                    <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtext1"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Non veg"
+                        android:textColor="@color/red" />
+
+
+                </LinearLayout>
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView3
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Near by:"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
+                    android:id="@+id/seekbartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundtext1"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="25 kms"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <SeekBar
+                    android:id="@+id/seekBarkms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:max="100"
+                    android:maxHeight="30dip"
+                    android:minHeight="15dip"
+                    android:progress="8"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/thumb_seekbar" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/corner_different"
+                    android:orientation="vertical">
+
+                    <ImageButton
+
+                        android:id="@+id/imageButton"
+                        android:layout_width="23dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        android:background="#51c779"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/correct" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
