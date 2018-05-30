@@ -135,24 +135,35 @@
                         android:rating="3"
                         android:theme="@style/RatingBar" />
 
-                    <com.example.kuldeep.bunny.custom_view.MyCustomTextView2
-                        android:id="@+id/text_review"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="2"
-                        android:text="(215)"
-                        android:textColor="@color/subtext"
-                        android:textSize="12dp" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundtextmodified"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:text="See on map"
+                        android:textColor="#f6464d"
+                        android:textSize="8dp" />
 
                     <ImageView
                         android:id="@+id/indicate"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="1dp"
                         android:layout_weight="3"
                         app:srcCompat="@drawable/fire2" />
+
+                    <TextView
+                        android:id="@+id/text_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView" />
 
 
                 </LinearLayout>

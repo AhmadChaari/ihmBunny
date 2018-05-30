@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.kuldeep.bunny.R;
@@ -47,9 +48,34 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
         holder.text_review.setText(pojoClassArrayList.get(position).getText_review());
         holder.indicate.setImageResource(pojoClassArrayList.get(position).getIndicate());
         holder.image_location.setImageResource(pojoClassArrayList.get(position).getImage_location());
-        Picasso.with(context).load(pojoClassArrayList.get(position).getImage()).transform(new LeftRoundedCornersBitmap()).into(holder.image);
+        //Picasso.with(context).load(pojoClassArrayList.get(position).getImage()).transform(new LeftRoundedCornersBitmap()).into(holder.image);
+
+        holder.ratingBar.setRating(pojoClassArrayList.get(position).getRating());
+        //Picasso.with(context).load(pojoClassArrayList.get(position).getImage()).transform(new LeftRoundedCornersBitmap()).into(holder.image);
+
+        if (pojoClassArrayList.get(position).getImage() != "R.drawable.img")
+        {
+            loadImgFromURL(pojoClassArrayList.get(position).getImage(),holder.image);
+        }
+        else {
+            Picasso.with(context).load(R.drawable.img).transform(new LeftRoundedCornersBitmap()).into(holder.image);
+        }
 
     }
+    public void loadImgFromURL(String url,ImageView imgView){
+        Picasso.with(context).load(url).placeholder(R.drawable.img).error(R.drawable.img).into(imgView, new com.squareup.picasso.Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError() {
+
+            }
+        });
+    }
+
 
     @Override
     public int getItemCount()   {return pojoClassArrayList.size();}
@@ -59,6 +85,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
         TextView text_name,text_location,text_menu1,text_menu2,text_menu3,text_review;
         ImageView image,image_location,indicate;
+        RatingBar ratingBar;
 
         public ViewHolder(View view) {
             super(view);
@@ -72,6 +99,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
             image = view.findViewById(R.id.image);
             indicate = view.findViewById(R.id.indicate);
             image_location = view.findViewById(R.id.image_location);
+            ratingBar = view.findViewById(R.id.myRatingBar);
 
         }
     }

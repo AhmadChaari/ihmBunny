@@ -7,7 +7,18 @@ package Models;
 public class PojoClass {
 
     private String text_name,text_location,text_menu1,text_menu2,text_menu3,text_review;
-    private int image, image_location,indicate;
+    private String image;
+    //private int image;
+    private int  image_location,indicate;
+    private float rating;
+
+    public float getRating() {
+        return rating;
+    }
+
+    public void setRating(float rating) {
+        this.rating = rating;
+    }
 
     public String getText_name() {
         return text_name;
@@ -57,14 +68,20 @@ public class PojoClass {
         this.text_review = text_review;
     }
 
-    public int getImage() {
+    /*public int getImage() {
         return image;
     }
-
-    public void setImage(int image) {
+*/
+    public String getImage() {
+        return image;
+    }
+    /*  public void setImage(int image) {
+          this.image = image;
+      }
+  */
+    public void setImage(String image) {
         this.image = image;
     }
-
     public int getImage_location() {
         return image_location;
     }
